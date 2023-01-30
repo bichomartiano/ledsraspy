@@ -13,6 +13,7 @@ x=0
 #Focusing on a particular strip, use the command Fill to make it all a single colour
 #based on decimal code R, G, B. Number can be anything from 255 - 0. Use a RGB Colour
 #Code Chart Website to quickly identify a desired fill colour.
+print("Filling red")
 pixels1.fill((255, 0, 0))
 
 #Below demonstrates how to individual address a colour to a LED Node, in this case
