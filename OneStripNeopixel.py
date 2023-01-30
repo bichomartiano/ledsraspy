@@ -5,7 +5,7 @@ import neopixel
 
 #Initialise a strips variable, provide the GPIO Data Pin
 #utilised and the amount of LED Nodes on strip and brightness (0 to 1 value)
-pixels1 = neopixel.NeoPixel(board.D18, 55, brightness=1)
+pixels1 = neopixel.NeoPixel(board.D18, 30, brightness=1)
 
 #Also create an arbitary count variable
 x=0
@@ -13,7 +13,7 @@ x=0
 #Focusing on a particular strip, use the command Fill to make it all a single colour
 #based on decimal code R, G, B. Number can be anything from 255 - 0. Use a RGB Colour
 #Code Chart Website to quickly identify a desired fill colour.
-pixels1.fill((0, 220, 0))
+pixels1.fill((255, 0, 0))
 
 #Below demonstrates how to individual address a colour to a LED Node, in this case
 #LED Node 10 and colour Blue was selected
