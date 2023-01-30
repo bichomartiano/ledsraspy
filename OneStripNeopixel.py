@@ -38,7 +38,7 @@ while x<30:
     x=x+1
     #Add a small time pause which will translate to 'smoothly' changing colour
     time.sleep(0.05)
-
+print(f"X value is {x}")
 #below section is the same process as above loop just in reverse
 while x>-15:
     pixels[x] = (255, 0, 0)
