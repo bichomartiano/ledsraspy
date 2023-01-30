@@ -21,7 +21,7 @@ pixels1[10] = (0, 20, 255)
 
 #Sleep for three seconds, You should now have all LEDs showing light with the first node
 #Showing a different colour
-time.sleep(4)
+time.sleep(100)
 
 #Little Light slider script, it will produce a nice loading bar effect all the way up
 #and then all the way back
