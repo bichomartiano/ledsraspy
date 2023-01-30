@@ -5,7 +5,7 @@ import neopixel
 
 #Initialise a strips variable, provide the GPIO Data Pin
 #utilised and the amount of LED Nodes on strip and brightness (0 to 1 value)
-pixels = neopixel.NeoPixel(board.D18, 10,bpp=4, brightness=1)
+pixels = neopixel.NeoPixel(board.D18, 11,bpp=4, brightness=1)
 
 #Also create an arbitary count variable
 x=0
