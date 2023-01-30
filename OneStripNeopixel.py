@@ -5,7 +5,7 @@ import neopixel
 
 #Initialise a strips variable, provide the GPIO Data Pin
 #utilised and the amount of LED Nodes on strip and brightness (0 to 1 value)
-pixels = neopixel.NeoPixel(board.D18, 30,bpp=4, brightness=1)
+pixels = neopixel.NeoPixel(board.D18, 10,bpp=4, brightness=1)
 
 #Also create an arbitary count variable
 x=0
@@ -41,6 +41,7 @@ while x<30:
 print(f"X value is {x}")
 #below section is the same process as above loop just in reverse
 while x>-15:
+    print(f"X value is {x}")
     pixels[x] = (255, 0, 0)
     pixels[x+5] = (255, 0, 100)
     pixels[x+10] = (0, 255, 0)
