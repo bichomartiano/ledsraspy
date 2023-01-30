@@ -5,7 +5,7 @@ import neopixel
 
 #Initialise a strips variable, provide the GPIO Data Pin
 #utilised and the amount of LED Nodes on strip and brightness (0 to 1 value)
-pixels1 = neopixel.NeoPixel(board.D18, 30, brightness=1)
+pixels1 = neopixel.NeoPixel(board.D18, 30,bpp=4, brightness=1)
 
 #Also create an arbitary count variable
 x=0
@@ -21,7 +21,7 @@ pixels1[10] = (0, 20, 255)
 
 #Sleep for three seconds, You should now have all LEDs showing light with the first node
 #Showing a different colour
-time.sleep(100)
+time.sleep(10)
 
 #Little Light slider script, it will produce a nice loading bar effect all the way up
 #and then all the way back
@@ -30,7 +30,6 @@ time.sleep(100)
 
 #Below will loop until variabe x has value 35
 while x<35:
-    
     pixels1[x] = (255, 0, 0)
     pixels1[x-5] = (255, 0, 100)
     pixels1[x-10] = (0, 0, 255)
@@ -53,3 +52,4 @@ time.sleep(4)
 #Complete the script by returning all the LED to off
 pixels1.fill((0, 0, 0))
 
+print('Program finished!')
